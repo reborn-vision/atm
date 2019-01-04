@@ -150,16 +150,16 @@
           animation: intro 1s;
 
 
-  .scroll {
-	  display: block;
-	  width: 3px;
-	  height: 3px;
-	  margin: 6px auto;
-	  border-radius: 4px;
-	  background: $white;
-	  -webkit-animation: finger 1.5s infinite;
-	          animation: finger 1.5s infinite;
-	}
+ //  .scroll {
+	//   display: block;
+	//   width: 3px;
+	//   height: 3px;
+	//   margin: 6px auto;
+	//   border-radius: 4px;
+	//   background: $white;
+	//   -webkit-animation: finger 1.5s infinite;
+	//           animation: finger 1.5s infinite;
+	// }
 }
 
 @-webkit-keyframes intro {
