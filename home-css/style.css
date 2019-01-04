@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+*,
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Playfair Display", serif;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+::selection {
+  background-color: #030303;
+  color: #fff;
+}
+
+.header__content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 992px) {
+  .header__content .big-logo {
+    max-width: 200% !important;
+  }
+}
+
+.big-logo {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header {
+  min-height: 100vh;
+  width: 100vw;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  box-sizing: border-box;
+  position: relative;
+  transform-style: inherit;
+}
+
+header, header:before {
+  background: 50% 50%/cover;
+}
+
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/homebg.jpg");
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.location {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.slogan {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.line {
+  width: 1px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+.line:before {
+  content: "";
+  width: 1px;
+  height: 50%;
+  top: 0;
+  background-color: #fff;
+  display: block;
+  animation: downWipe 3s ease-in-out infinite;
+}
+
+@keyframes downWipe {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+  70% {
+    height: 100%;
+    transform: scaleY(0.5);
+    transform-origin: bottom;
+  }
+  100% {
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+.about {
+  padding: 5%;
+  background-color: #fafafa;
+  font-family: "Playfair Display", serif;
+  position: relative;
+}
+
+.entry {
+  color: #fff;
+}
+.entry img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 15px 20px 15px 20px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.4s all ease-out;
+}
+.button:hover {
+  text-decoration: none;
+  color: #030303;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.hover {
+  visibility: visible;
+}
+
+.item__pa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1504682153790-007c47b98407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4%;
+}
+
+.item__le {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/35078850_380873089068573_4772715487794561024_n.jpg?_nc_cat=103&_nc_ht=scontent.fiev10-1.fna&oh=fe77776618dd7493e4a55e1e3bfa6ca3&oe=5CC2033F");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4%;
+}
+
+.item__te {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/34859370_380338089122073_894920358119866368_n.jpg?_nc_cat=100&_nc_ht=scontent.fiev10-1.fna&oh=31ab6c63dbc4b9683f90be47567fa7b5&oe=5C96DC9E");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4%;
+}
+
+.item__ma {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://scontent.fiev10-1.fna.fbcdn.net/v/t1.0-9/33711499_375345336288015_5065053484768821248_n.jpg?_nc_cat=101&_nc_ht=scontent.fiev10-1.fna&oh=150e5eac44486d04bba0d7cc99382ce7&oe=5CD7F51D");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4%;
+}
+
+.desc {
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+.adres {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.75rem;
+}
+
+.card__content {
+  position: relative;
+  z-index: 2;
+  padding: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */

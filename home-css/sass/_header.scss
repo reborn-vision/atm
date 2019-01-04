@@ -1,0 +1,101 @@
+
+.header__content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @media (max-width: 992px) {
+    .big-logo {
+      max-width: 200% !important;
+    }
+  }
+}
+
+.big-logo {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header {
+  min-height: 100vh;
+  width: 100vw;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+  position: relative;
+  transform-style: inherit;
+}
+
+header, header:before {
+  background: 50% 50% / cover;
+}
+
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../media/homebg.jpg');
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.location {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.slogan {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+// scrolldown button
+.line {
+  width: 1px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  
+  &:before {
+    content: '';
+    width: 1px;
+    height: 50%;
+    top: 0;
+    background-color: #fff;
+    display: block;
+    animation: downWipe 3s ease-in-out infinite;
+  }
+}
+
+@keyframes downWipe {
+  0% {
+    height: 0;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  70% {
+    height: 100%;
+    transform: scaleY(0.5);
+    transform-origin: bottom;
+  }
+  100% {
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
