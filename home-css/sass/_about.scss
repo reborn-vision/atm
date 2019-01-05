@@ -27,14 +27,11 @@
     color: #fff;
     border: 1px solid #fff;
     transition: .4s all ease-out;
-    // left: 50%;
-    // transform: translateX(-50%);
 
     &:hover {
         text-decoration: none;
         color: #030303;
         background-color: #fff;
-        font-weight: bold;
     }
 }
 
