@@ -137,17 +137,23 @@
 }
 
 .templateux-mouse {
-  position: absolute;
-  width: 22px;
-  height: 42px;
-  bottom: 100px;
-  z-index: 20;
-  left: 50%;
-  margin-left: -12px;
-  border-radius: 15px;
-  border: 2px solid $white;
-  -webkit-animation: intro 1s;
-          animation: intro 1s;
+ 	position: absolute;
+	letter-spacing: 1px;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 5%;
+	z-index: 20;
+	padding: 5px 10px 5px 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 2px solid #fff;
+  	-webkit-animation: intro 1s;
+          	animation: intro 1s;
+
+     &:hover {
+     	cursor: pointer;
+     	background-color: #fff;
+     }
 
 
  //  .scroll {
@@ -206,3 +212,49 @@
             transform: translateY(20px);
   }
 }
+
+
+.header-text p {
+	color: #fff;
+}
+
+
+// scrolldown button
+// .line {
+//   width: 1px;
+//   height: 100px;
+//   display: block;
+//   position: absolute;
+//   bottom: 0;
+  
+//   &:before {
+//     content: '';
+//     width: 2px;
+//     height: 50%;
+//     top: 0;
+//     background-color: #fff;
+//     display: block;
+//     animation: downWipe 3s ease-in-out infinite;
+//   }
+// }
+
+// @keyframes downWipe {
+//   0% {
+//     height: 0;
+//   }
+  
+//   50% {
+//     height: 100%;
+//   }
+  
+//   70% {
+//     height: 100%;
+//     transform: scaleY(0.5);
+//     transform-origin: bottom;
+//   }
+//   100% {
+//     height: 100%;
+//     transform: scaleY(0);
+//     transform-origin: bottom;
+//   }
+// }

@@ -23191,8 +23191,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   position: absolute;
   letter-spacing: 1px;
   color: #fff;
-  font-size: 12px;
-  margin-top: 5%;
+  bottom: 100px;
   z-index: 20;
   padding: 5px 10px 5px 10px;
   left: 50%;
@@ -23200,10 +23199,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   border: 2px solid #fff;
   -webkit-animation: intro 1s;
   animation: intro 1s;
-}
-.templateux-mouse:hover {
-  cursor: pointer;
-  background-color: #fff;
 }
 
 @-webkit-keyframes intro {
@@ -23250,10 +23245,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transform: translateY(20px);
   }
 }
-.header-text p {
-  color: #fff;
-}
-
 #mobile-menu {
   background-color: #595959;
 }
