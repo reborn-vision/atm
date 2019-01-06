@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5,
 		}
 	}
 	.site-subheading, p {
-		color: rgba(255,255,255,.7);
+		color: #fff;
 		font-weight: 300;
 		font-family: $font-sans-serif;
 	}
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5,
 		}
 	}
 	.site-vh-100 {
-		min-height: 700px!important;
+		min-height: 100vh !important;
 	}
 }
 .site-slant {
@@ -850,5 +850,46 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
+  }
+}
+
+
+// scrolldown button
+.line {
+  width: 1px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  
+  &:before {
+    content: '';
+    width: 2px;
+    height: 50%;
+    top: 0;
+    background-color: #fff;
+    display: block;
+    animation: downWipe 3s ease-in-out infinite;
+  }
+}
+
+@keyframes downWipe {
+  0% {
+    height: 0;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  70% {
+    height: 100%;
+    transform: scaleY(0.5);
+    transform-origin: bottom;
+  }
+  100% {
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
   }
 }
