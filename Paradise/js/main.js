@@ -3,14 +3,14 @@ $(document).ready(function($) {
 	"use strict";
 
 	// loader
-	var loader = function() {
-		setTimeout(function() { 
-			if($('#site-loader').length > 0) {
-				$('#site-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
+	// var loader = function() {
+	// 	setTimeout(function() { 
+	// 		if($('#site-loader').length > 0) {
+	// 			$('#site-loader').removeClass('show');
+	// 		}
+	// 	}, 1);
+	// };
+	// loader();
 
 	var carousel = function() {
 		$('.owl-carousel').owlCarousel({
