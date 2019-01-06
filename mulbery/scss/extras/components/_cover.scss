@@ -24,7 +24,7 @@
 	}
 
 	&, > .container > .row {
-		min-height: 800px;
+		min-height: 100vh;
 		@include media-breakpoint-up(md) {
 			min-height: 800px;
 			height: 100vh;	
