@@ -35,7 +35,7 @@ $(document).ready(function($) {
 	};
 	carousel();
 
-	// scroll
+	// scroll 
 	var scrollWindow = function() {
 		$(window).scroll(function(){
 			var $w = $(this),

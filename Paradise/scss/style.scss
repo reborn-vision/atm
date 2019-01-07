@@ -1,5 +1,5 @@
 $font-serif: 'Playfair Display', serif;
-$font-sans-serif: 'Raleway', sans-serif;
+$font-sans-serif: sans-serif;
 
 $xl: 1140px;
 $lg: 960px;
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5,
 	line-height: 1.45;
 	color: $black;
 	font-family: $font-serif;
-	font-weight: bold;
+	// font-weight: bold;
 }
 
 .text-primary {
@@ -468,7 +468,7 @@ textarea.form-control {
 }
 
 .site-section {
-	padding: 7em 0;
+	padding: 1em 0;
 }
 
 .site-bg-dark {
@@ -487,10 +487,10 @@ textarea.form-control {
 		}
 	}
 	p {
-		color: rgba($white, .3);
+		color: rgba($black, .7);
 	}
 	a {
-		color: rgba($white, .3);
+		color: rgba($black, .7);
 		&:hover {
 			color: $primary;
 		}
